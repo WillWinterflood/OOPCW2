@@ -1,12 +1,10 @@
 // TODO: Implement the BaccaratHand class in the file
 
-public class BaccaratHand {
-    
-    private Hand hand;
+public BaccaratHand {
 
-    public void add(BaccaratCard card) {
-
-        cards.add(card);
-
+    public BaccaratHand() {
+        cards = new ArrayList<>();
     }
+
 }
+
