@@ -1,10 +1,8 @@
 // TODO: Implement the BaccaratHand class in the file
 
-public BaccaratHand {
-
-    public BaccaratHand() {
-        cards = new ArrayList<>();
+/*public class BaccaratHand extends CardCollection {
+    public int value() {
+        int total =    
     }
-
-}
+}*/
 
