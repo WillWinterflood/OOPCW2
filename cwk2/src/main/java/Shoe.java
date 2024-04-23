@@ -32,6 +32,6 @@ public class Shoe extends CardCollection {
             throw new CardException ("Shoe is empty");
         }
 
-        return Shoe.remove(0);
+        return (BaccaratCard) cards.remove(0);
     }
 }
