@@ -5,7 +5,7 @@ public class BaccaratCard extends Card {
         super(rank, suit);
     }
     
-    public int Value() {
+    public int value() {
         int number;
 
         switch (getRank()) {
