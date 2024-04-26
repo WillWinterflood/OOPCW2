@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">3</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.151s</div>
+<div class="counter">0.104s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">80%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,307 +61,10 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
-</li>
-<li>
-<a href="#tab1">Tests</a>
+<a href="#tab0">Tests</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="dealFromEmptyShoeException()"></a>
-<h3 class="failures">CardException when dealing from empty shoe</h3>
-<span class="code">
-<pre>CardException: Shoe is empty
-	at app//Shoe.deal(Shoe.java:32)
-	at app//Basic.dealFromEmptyShoeException(Basic.java:225)
-	at java.base@21.0.2/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base@21.0.2/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base@21.0.2/java.util.ArrayList.forEach(ArrayList.java:1596)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="dealFromShoe()"></a>
-<h3 class="failures">Cards dealt correctly from unshuffled Shoe</h3>
-<span class="code">
-<pre>org.gradle.internal.exceptions.DefaultMultiCauseException: Multiple Failures (4 failures)
-	java.lang.AssertionError: 
-Expected: is &lt;309&gt;
-     but: was &lt;10&gt;
-	java.lang.AssertionError: 
-Expected: &lt;A♣&gt;
-     but: was &lt;2♣&gt;
-	java.lang.AssertionError: 
-Expected: &lt;2♣&gt;
-     but: was &lt;4♣&gt;
-	java.lang.AssertionError: 
-Expected: &lt;3♣&gt;
-     but: was &lt;2♦&gt;
-	at app//org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:80)
-	at app//org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:44)
-	at app//org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:38)
-	at app//org.junit.jupiter.api.Assertions.assertAll(Assertions.java:2944)
-	at app//Basic.dealFromShoe(Basic.java:203)
-	at java.base@21.0.2/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base@21.0.2/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base@21.0.2/java.util.ArrayList.forEach(ArrayList.java:1596)
-	Suppressed: java.lang.AssertionError: 
-Expected: is &lt;309&gt;
-     but: was &lt;10&gt;
-		at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-		at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-		at Basic.lambda$dealFromShoe$44(Basic.java:204)
-		at org.junit.jupiter.api.AssertAll.lambda$assertAll$0(AssertAll.java:68)
-		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-		at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
-		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-		at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-		at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-		at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:77)
-		... 7 more
-	Suppressed: java.lang.AssertionError: 
-Expected: &lt;A♣&gt;
-     but: was &lt;2♣&gt;
-		at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-		at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-		at Basic.lambda$dealFromShoe$46(Basic.java:206)
-		at org.junit.jupiter.api.AssertAll.lambda$assertAll$0(AssertAll.java:68)
-		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-		at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
-		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-		at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-		at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-		at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:77)
-		... 7 more
-	Suppressed: java.lang.AssertionError: 
-Expected: &lt;2♣&gt;
-     but: was &lt;4♣&gt;
-		at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-		at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-		at Basic.lambda$dealFromShoe$47(Basic.java:207)
-		at org.junit.jupiter.api.AssertAll.lambda$assertAll$0(AssertAll.java:68)
-		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-		at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
-		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-		at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-		at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-		at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:77)
-		... 7 more
-	Suppressed: java.lang.AssertionError: 
-Expected: &lt;3♣&gt;
-     but: was &lt;2♦&gt;
-		at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-		at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-		at Basic.lambda$dealFromShoe$48(Basic.java:208)
-		at org.junit.jupiter.api.AssertAll.lambda$assertAll$0(AssertAll.java:68)
-		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-		at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
-		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-		at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-		at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-		at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:77)
-		... 7 more
-Cause 1: java.lang.AssertionError: 
-Expected: is &lt;309&gt;
-     but: was &lt;10&gt;
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-	at Basic.lambda$dealFromShoe$44(Basic.java:204)
-	at org.junit.jupiter.api.AssertAll.lambda$assertAll$0(AssertAll.java:68)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:77)
-	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:44)
-	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:38)
-	at org.junit.jupiter.api.Assertions.assertAll(Assertions.java:2944)
-	at Basic.dealFromShoe(Basic.java:203)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Cause 2: java.lang.AssertionError: 
-Expected: &lt;A♣&gt;
-     but: was &lt;2♣&gt;
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-	at Basic.lambda$dealFromShoe$46(Basic.java:206)
-	at org.junit.jupiter.api.AssertAll.lambda$assertAll$0(AssertAll.java:68)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:77)
-	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:44)
-	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:38)
-	at org.junit.jupiter.api.Assertions.assertAll(Assertions.java:2944)
-	at Basic.dealFromShoe(Basic.java:203)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Cause 3: java.lang.AssertionError: 
-Expected: &lt;2♣&gt;
-     but: was &lt;4♣&gt;
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-	at Basic.lambda$dealFromShoe$47(Basic.java:207)
-	at org.junit.jupiter.api.AssertAll.lambda$assertAll$0(AssertAll.java:68)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:77)
-	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:44)
-	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:38)
-	at org.junit.jupiter.api.Assertions.assertAll(Assertions.java:2944)
-	at Basic.dealFromShoe(Basic.java:203)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Cause 4: java.lang.AssertionError: 
-Expected: &lt;3♣&gt;
-     but: was &lt;2♦&gt;
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-	at Basic.lambda$dealFromShoe$48(Basic.java:208)
-	at org.junit.jupiter.api.AssertAll.lambda$assertAll$0(AssertAll.java:68)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:77)
-	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:44)
-	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:38)
-	at org.junit.jupiter.api.Assertions.assertAll(Assertions.java:2944)
-	at Basic.dealFromShoe(Basic.java:203)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="shoeCreation()"></a>
-<h3 class="failures">Shoes are created with the correct numbers of cards</h3>
-<span class="code">
-<pre>org.gradle.internal.exceptions.DefaultMultiCauseException: Multiple Failures (2 failures)
-	java.lang.AssertionError: 
-Expected: is &lt;312&gt;
-     but: was &lt;16&gt;
-	java.lang.AssertionError: 
-Expected: is &lt;416&gt;
-     but: was &lt;16&gt;
-	at app//org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:80)
-	at app//org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:44)
-	at app//org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:38)
-	at app//org.junit.jupiter.api.Assertions.assertAll(Assertions.java:2944)
-	at app//Basic.shoeCreation(Basic.java:181)
-	at java.base@21.0.2/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base@21.0.2/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base@21.0.2/java.util.ArrayList.forEach(ArrayList.java:1596)
-	Suppressed: java.lang.AssertionError: 
-Expected: is &lt;312&gt;
-     but: was &lt;16&gt;
-		at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-		at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-		at Basic.lambda$shoeCreation$36(Basic.java:182)
-		at org.junit.jupiter.api.AssertAll.lambda$assertAll$0(AssertAll.java:68)
-		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-		at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
-		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-		at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-		at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-		at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:77)
-		... 7 more
-	Suppressed: java.lang.AssertionError: 
-Expected: is &lt;416&gt;
-     but: was &lt;16&gt;
-		at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-		at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-		at Basic.lambda$shoeCreation$37(Basic.java:183)
-		at org.junit.jupiter.api.AssertAll.lambda$assertAll$0(AssertAll.java:68)
-		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-		at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
-		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-		at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-		at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-		at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:77)
-		... 7 more
-Cause 1: java.lang.AssertionError: 
-Expected: is &lt;312&gt;
-     but: was &lt;16&gt;
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-	at Basic.lambda$shoeCreation$36(Basic.java:182)
-	at org.junit.jupiter.api.AssertAll.lambda$assertAll$0(AssertAll.java:68)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:77)
-	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:44)
-	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:38)
-	at org.junit.jupiter.api.Assertions.assertAll(Assertions.java:2944)
-	at Basic.shoeCreation(Basic.java:181)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Cause 2: java.lang.AssertionError: 
-Expected: is &lt;416&gt;
-     but: was &lt;16&gt;
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-	at Basic.lambda$shoeCreation$37(Basic.java:183)
-	at org.junit.jupiter.api.AssertAll.lambda$assertAll$0(AssertAll.java:68)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:77)
-	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:44)
-	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:38)
-	at org.junit.jupiter.api.Assertions.assertAll(Assertions.java:2944)
-	at Basic.shoeCreation(Basic.java:181)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -375,50 +78,50 @@ Expected: is &lt;416&gt;
 <tr>
 <td class="success">Cards added to hand correctly</td>
 <td class="success">addingCardsToHand()</td>
-<td class="success">0.030s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">BaccaratCard objects can be compared &amp; ordered</td>
 <td class="success">cardComparison()</td>
-<td class="success">0.011s</td>
+<td class="success">0.006s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">BaccaratCard objects are created properly</td>
 <td class="success">cardCreation()</td>
-<td class="success">0.028s</td>
+<td class="success">0.039s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">BaccaratCard objects can be tested for equality</td>
 <td class="success">cardEquality()</td>
-<td class="success">0.002s</td>
+<td class="success">0.007s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">BaccaratCard has the correct string representation</td>
 <td class="success">cardStringRepresentation()</td>
-<td class="success">0.001s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">BaccaratCard values are computed correctly</td>
 <td class="success">cardValue()</td>
-<td class="success">0.006s</td>
+<td class="success">0.009s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">CardException when dealing from empty shoe</td>
-<td class="failures">dealFromEmptyShoeException()</td>
-<td class="failures">0.002s</td>
-<td class="failures">failed</td>
+<td class="success">CardException when dealing from empty shoe</td>
+<td class="success">dealFromEmptyShoeException()</td>
+<td class="success">0.009s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">Cards dealt correctly from unshuffled Shoe</td>
-<td class="failures">dealFromShoe()</td>
-<td class="failures">0.027s</td>
-<td class="failures">failed</td>
+<td class="success">Cards dealt correctly from unshuffled Shoe</td>
+<td class="success">dealFromShoe()</td>
+<td class="success">0.008s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Empty hand created correctly</td>
@@ -429,13 +132,13 @@ Expected: is &lt;416&gt;
 <tr>
 <td class="success">BaccaratHand has the correct string representation</td>
 <td class="success">handStringRepresentation()</td>
-<td class="success">0.002s</td>
+<td class="success">0.005s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">BaccaratHand values computed correctly</td>
 <td class="success">handValue()</td>
-<td class="success">0.018s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -445,21 +148,21 @@ Expected: is &lt;416&gt;
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">Shoes are created with the correct numbers of cards</td>
-<td class="failures">shoeCreation()</td>
-<td class="failures">0.015s</td>
-<td class="failures">failed</td>
+<td class="success">Shoes are created with the correct numbers of cards</td>
+<td class="success">shoeCreation()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">CardException when creating a Shoe with wrong number of decks</td>
 <td class="success">shoeCreationException()</td>
-<td class="success">0.003s</td>
+<td class="success">0.006s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Shoe can be shuffled</td>
 <td class="success">shuffle()</td>
-<td class="success">0.003s</td>
+<td class="success">0.005s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -472,7 +175,7 @@ Expected: is &lt;416&gt;
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.6</a> at Apr 26, 2024, 3:38:13 PM</p>
+<a href="http://www.gradle.org">Gradle 8.6</a> at Apr 26, 2024, 4:51:15 PM</p>
 </div>
 </div>
 </body>

@@ -10,18 +10,19 @@ public class Shoe extends CardCollection {
             throw new CardException("Number of decks must be either 6 or 8");
 
         }
-        for (int i = 0; i < BaccaratCard.Suit.values().length; i++) {
+        for (int n = 0; n < NoOfDecks; n++) {
+            for (int i = 0; i < BaccaratCard.Suit.values().length; i++) {
 
-            BaccaratCard.Suit suit = BaccaratCard.Suit.values() [i];
+                BaccaratCard.Suit suit = BaccaratCard.Suit.values()[i];
 
-            for (int x = 0; x < BaccaratCard.Suit.values().length; x++) {
+                for (int x = 0; x < BaccaratCard.Rank.values().length; x++) {
 
-                BaccaratCard.Rank rank = BaccaratCard.Rank.values() [x];
-                cards.add(new BaccaratCard(rank,suit));
+                    BaccaratCard.Rank rank = BaccaratCard.Rank.values()[x];
+                    cards.add(new BaccaratCard(rank, suit));
+                }
             }
+        
         }
-        
-        
     }
     public void shuffle() {
         Collections.shuffle(cards);
@@ -31,8 +32,6 @@ public class Shoe extends CardCollection {
         if (cards.isEmpty()) {
             throw new CardException ("Shoe is empty");
         }
-        
-        cards.remove(0);
 
         return (BaccaratCard) cards.remove(0);
         
