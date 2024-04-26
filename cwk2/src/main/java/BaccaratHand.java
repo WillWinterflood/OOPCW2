@@ -5,9 +5,16 @@ public class BaccaratHand extends CardCollection {
     public int size() {
       return cards.size();
     }
-
+  
     public String toString() {
-        
+        String cardRep = "";
+        for (int i = 0; i < cards.size(); i++) {
+            cardRep += cards.get(i).toString();
+            if (i < cards.size()) {
+                cardRep += " ";
+            }
+        }
+        return cardRep.trim();
     }
 
     public int value() {
